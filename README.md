@@ -3,13 +3,12 @@ Demo TYPO3 site setup
 
 First install
 -------------
-`composer install --no-scripts`
-
-`composer dump-autoload`
+`composer run preCoreInstallCmd`
 
 `./vendor/bin/typo3cms install:setup`
 
-Subsequent updates
-------------------
-`composer update`
+`composer run postCoreInstallCmd`
 
+Subsequent installs / updates
+-----------------------------
+`composer install` / `composer update`

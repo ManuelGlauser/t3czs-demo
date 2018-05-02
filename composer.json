@@ -31,7 +31,9 @@
     "typo3/cms-viewpage": "^8.7"
   },
 
-  "require-dev": {},
+  "require-dev": {
+    "staempfli/typo3-conventions-checker": "^0.3"
+  },
   
   "autoload": {
     "psr-4": {
@@ -58,6 +60,15 @@
     ],
     "linkAdditionalConfiguration": [
       "typo3cms configuration:includesiteconfiguration"
+    ],
+    "typo3CoreInstallCmd": [
+      "composer install --no-scripts --no-dev",
+      "composer dump-autoload"
+    ],
+    "postCoreInstallCmd": [
+      "composer install --dev",
+      "@linkAdditionalConfiguration",
+      "@updateLanguagePacks"
     ]
   },
 
@@ -65,6 +76,9 @@
     "typo3/cms": {
       "cms-package-dir": "{$vendor-dir}/typo3/cms",
       "web-dir": "web"
+    },
+    "grumphp": {
+      "config-default-path": "vendor/staempfli/typo3-conventions-checker/conf/grumphp.yml"
     }
   }
 }
