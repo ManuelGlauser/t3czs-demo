@@ -61,7 +61,7 @@
     "linkAdditionalConfiguration": [
       "typo3cms configuration:includesiteconfiguration"
     ],
-    "typo3CoreInstallCmd": [
+    "preCoreInstallCmd": [
       "composer install --no-scripts --no-dev",
       "composer dump-autoload"
     ],

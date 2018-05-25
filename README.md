@@ -3,7 +3,7 @@ Demo TYPO3 site setup
 
 First install
 -------------
-`composer run preCoreInstallCmd`
+`composer run preCoreInstallCmd --timeout 900`
 
 `./vendor/bin/typo3cms install:setup`
 
