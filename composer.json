@@ -49,11 +49,13 @@
     "post-install-cmd": [
       "typo3cms extension:setupactive",
       "@linkAdditionalConfiguration",
-      "@updateLanguagePacks"
+      "@updateLanguagePacks",
+      "Staempfli\\Typo3ConventionsChecker\\Composer\\Grumphp::initializeExtensions"
     ],
     "post-update-cmd": [
       "typo3cms extension:setupactive",
-      "@linkAdditionalConfiguration"
+      "@linkAdditionalConfiguration",
+      "Staempfli\\Typo3ConventionsChecker\\Composer\\Grumphp::initializeExtensions"
     ],
     "updateLanguagePacks": [
       "typo3cms language:update"
