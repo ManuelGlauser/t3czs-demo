@@ -9,7 +9,10 @@ First install
 
 `./vendor/bin/typo3cms install:setup`
 
-Subsequent updates
-------------------
-`composer update`
+`composer run post-install-cmd`
+
+
+Subsequent updates/installs
+---------------------------
+`composer update` or `composer install`
 
