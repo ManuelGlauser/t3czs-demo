@@ -2,8 +2,9 @@
 if (!defined('TYPO3_MODE')) {
     die('Access denied.');
 }
+// Test!
 
-$setUpTheDemoSite = function($_EXTKEY) {
+$setUpTheDemoSite = function ($_EXTKEY) {
 
     // Include page TSconfig
     // Include constants
@@ -23,7 +24,6 @@ $setUpTheDemoSite = function($_EXTKEY) {
         $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['extbase']['commandControllers'][] =
             \Acme\DemoSite\Command\ConfigurationCommandController::class;
     }
-    
 };
 
 $setUpTheDemoSite($_EXTKEY);
